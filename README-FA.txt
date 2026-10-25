@@ -1,23 +1,27 @@
-AlfaPlus حساب‌یار — پروژه منبع اندروید
+پروژه اندروید AlfaPlus Hesabyar
+================================
 
-محتوا:
-- اپلیکیشن WebView اندروید که رابط حساب‌یار را از assets/index.html اجرا می‌کند.
-- ثبت مشتری، تراکنش‌ها، یادداشت‌ها، گزارش و فایل پشتیبان.
-- نسخه رایگان محدود به ۱۰ مشتری.
-- اطلاعات محلی روی دستگاه ذخیره می‌شوند.
-- راه‌های پشتیبانی: تلگرام @SupAlfaself و شماره 0775234072.
+ساختار صحیح پروژه:
+- settings.gradle
+- build.gradle
+- gradle.properties
+- app/build.gradle
+- app/src/main/AndroidManifest.xml
+- app/src/main/java/ir/alfapluss/hesabyar/MainActivity.java
+- app/src/main/assets/index.html
+- .github/workflows/android.yml
 
-ساخت APK:
-1) این ZIP را روی رایانه استخراج کنید.
-2) Android Studio نسخه جدید نصب و پروژه پوشه AlfaPlus-Hesabyar-Android را باز کنید.
-3) اگر SDK خواسته شد Android SDK Platform 35 و Build Tools را نصب کنید.
-4) از منوی Build گزینه Build APK(s) را انتخاب کنید.
-5) فایل معمولاً در app/build/outputs/apk/debug/app-debug.apk ساخته می‌شود.
+روش ساخت APK با گوشی و GitHub:
+1) این ZIP را دانلود و Extract کنید.
+2) در مخزن GitHub، فایل‌های داخل پوشه AlfaPlus-Hesabyar-Android را آپلود کنید، نه خود پوشه را به‌عنوان یک پوشه تو در تو.
+3) فایل‌ها باید در ریشه مخزن قرار بگیرند. یعنی در صفحه Code باید settings.gradle و build.gradle و پوشه app و پوشه .github دیده شوند.
+4) داخل مخزن به Actions بروید.
+5) workflow با نام Build AlfaPlus Hesabyar APK را انتخاب کنید.
+6) روی Run workflow بزنید.
+7) بعد از تیک سبز، وارد اجرای موفق شوید و از بخش Artifacts فایل AlfaPlus-Hesabyar-APK را دانلود کنید.
+8) ZIP مربوط به Artifact را در گوشی Extract کنید و APK را نصب کنید. ممکن است Android اجازه نصب از این منبع را بخواهد.
 
-محدودیت مهم خرید پریمیوم:
-در رابط برنامه، خرید پریمیوم ۵ دلاری و تماس با پشتیبانی درج شده است؛ پرداخت خودکار و فعال‌سازی امن هنوز پیاده‌سازی نشده، چون به درگاه پرداخت یا سرور تأیید لایسنس نیاز دارد. فعلاً محدودیت ۱۰ مشتری در نسخه رایگان فعال است. از آن‌جا که اطلاعات و پرمیوم در این نمونه محلی‌اند، این سازوکار به‌تنهایی ضد دست‌کاری نیست و برای انتشار عمومی/فروش واقعی باید سمت سرور پیاده‌سازی شود.
+اگر ساخت شکست خورد، وارد مرحله قرمز شوید و اولین پیام خطا را بررسی کنید.
 
-پشتیبان‌گیری:
-از داخل برنامه بخش گزارش مالی، فایل پشتیبان JSON بگیرید و در جای امن نگه دارید.
-
-ساخت ابری از طریق GitHub Actions: فایل ZIP دارای workflow است. پس از بارگذاری پروژه در یک مخزن GitHub، از تب Actions اجرای workflow را فعال کنید و APK را از بخش Artifacts دانلود کنید.
+پشتیبانی: Telegram @SupAlfaself
+تماس: +93775234072

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080b10"><title>AlfaPlus حساب‌یار</title>
+<style>
+:root{--bg:#080b10;--panel:#101720;--panel2:#141e29;--gold:#e8bd58;--gold2:#a97b22;--text:#f4f1e9;--muted:#9ba7b5;--line:#263340;--green:#34d399;--red:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 12% 0%,#252014 0,transparent 28%),radial-gradient(ellipse at 90% 12%,#10243a 0,transparent 32%),radial-gradient(ellipse at top,#111820 0,#05070a 68%);color:var(--text);font-family:Tahoma,"Noto Sans Arabic",sans-serif;font-size:14px}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:12px 14px;background:linear-gradient(135deg,#f2d27b,#c18b2c);color:#17130a;font-weight:700}input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:11px;background:#0a1119;color:var(--text);outline:none}textarea{min-height:80px;resize:vertical}label{display:block;color:var(--muted);font-size:12px;margin:12px 0 6px}.app{max-width:680px;margin:auto;min-height:100dvh;padding:16px 14px 95px}.head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{display:flex;align-items:center;gap:10px}.logo{width:43px;height:43px;border-radius:14px;background:linear-gradient(145deg,#f8dc8a,#a36c13);display:grid;place-items:center;color:#111;font-size:25px;font-weight:900;box-shadow:0 0 22px #d9a83d30}.brand b{font-size:18px;color:var(--gold)}.brand small{display:block;color:var(--muted);margin-top:4px}.pill{border:1px solid #4b3a1c;color:var(--gold);border-radius:99px;padding:7px 10px;font-size:11px}.page{display:none}.page.active{display:block}.hero{padding:20px;border:1px solid #8a6728;border-radius:20px;background:radial-gradient(ellipse at 100% 0%,#392b12 0,transparent 55%),linear-gradient(135deg,#171b20,#080b10);box-shadow:inset 0 1px #e8bd5820,0 10px 30px #0008;position:relative;overflow:hidden;margin-bottom:14px}.hero:after{content:"A";position:absolute;left:8px;bottom:-38px;font-size:150px;font-weight:900;color:#e8bd5809;pointer-events:none}.hero h2{margin:0 0 6px;font-size:19px}.hero p{color:var(--muted);margin:0;line-height:1.8}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:12px 0}.card{background:linear-gradient(150deg,#17222d,#0e141c);border:1px solid var(--line);border-radius:15px;padding:13px 10px;min-width:0}.card small{color:var(--muted);display:block;font-size:11px}.card strong{display:block;color:var(--gold);font-size:15px;margin-top:8px;overflow-wrap:anywhere}.section{margin-top:17px}.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.section-title h3{margin:0;font-size:15px}.subtle{color:var(--muted);font-size:12px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.action{background:#111a24;color:var(--text);border:1px solid var(--line);text-align:right;display:flex;align-items:center;gap:10px}.action span{font-size:20px;color:var(--gold)}.item{background:linear-gradient(145deg,#131b24,#090e14);border:1px solid #263340;padding:13px;border-radius:14px;margin:8px 0;box-shadow:0 6px 18px #0003}.balance-line{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;margin-top:7px;border-radius:10px;background:#080d12;border:1px solid #263340;font-size:12px}.balance-line b{direction:ltr;white-space:nowrap}.greenbox{color:var(--green)}.redbox{color:var(--red)}.itemtop{display:flex;align-items:center;justify-content:space-between;gap:10px}.item b{font-size:14px}.item p{margin:7px 0 0;color:var(--muted);font-size:12px;line-height:1.7}.amount{font-weight:bold;direction:ltr;white-space:nowrap}.positive{color:var(--green)}.negative{color:var(--red)}.empty{text-align:center;padding:26px;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.formbox{padding:15px;border:1px solid var(--line);border-radius:17px;background:#0d141c}.wide{width:100%;margin-top:14px}.secondary{background:#17212c;color:var(--text);border:1px solid var(--line)}.danger{background:#3a1720;color:#ffd8de;border:1px solid #6a2633}.nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:#090d12f5;border-top:1px solid var(--line);display:flex;justify-content:center;padding:8px max(6px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom));backdrop-filter:blur(14px)}.navinner{width:min(680px,100%);display:grid;grid-template-columns:repeat(5,1fr);gap:4px}.nav button{background:transparent;color:var(--muted);padding:9px 2px;font-size:11px;font-weight:400}.nav button span{display:block;font-size:18px;margin-bottom:4px}.nav button.active{color:var(--gold);background:#211b10;border-radius:12px}.rowbtn{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.rowbtn button{padding:8px 10px;font-size:12px}.search{margin-bottom:10px}.note{white-space:pre-wrap;line-height:1.8}.smallbtn{padding:8px 10px;font-size:12px}.hidden{display:none!important}.hint{font-size:11px;color:var(--muted);line-height:1.8;margin-top:9px}.filebtn{display:block;text-align:center;margin-top:10px}.toast{position:fixed;top:15px;left:15px;right:15px;margin:auto;max-width:420px;padding:12px;background:#18251d;border:1px solid #31583e;border-radius:12px;z-index:20;display:none}
+@media(max-width:390px){.cards{gap:6px}.card{padding:10px 7px}.card strong{font-size:12px}.brand b{font-size:16px}.grid2{gap:7px}}
+</style></head>
+<body>
+<div class="app">
+<header class="head"><div class="brand"><div class="logo">A</div><div><b>AlfaPlus | حساب‌یار</b><small>دفتر حساب شخصی و مشتریان</small></div></div><div class="pill">نسخه محلی</div></header>
+<div id="toast" class="toast"></div>
+<section id="home" class="page active">
+<div class="hero"><h2>سلام، خوش آمدید 👋</h2><p>حساب مشتریان، دریافت و پرداخت و یادداشت‌های روزانه را در یک جا مدیریت کنید.</p></div>
+<div class="section-title"><h3>خلاصه حساب‌ها</h3><span class="subtle">به تفکیک ارز</span></div>
+<div class="cards" id="currencyCards"></div>
+<div class="section"><div class="section-title"><h3>دسترسی سریع</h3></div><div class="actions">
+<button class="action" onclick="openPage('customers')"><span>♙</span> مشتریان</button>
+<button class="action" onclick="openTxn()"><span>＋</span> ثبت دریافت / پرداخت</button>
+<button class="action" onclick="openPage('notes')"><span>▤</span> یادداشت روزانه</button>
+<button class="action" onclick="openPage('reports')"><span>▥</span> گزارش مالی</button>
+</div></div>
+<div class="section"><div class="section-title"><h3>آخرین تراکنش‌ها</h3><button class="secondary smallbtn" onclick="openPage('history')">مشاهده همه</button></div><div id="recent"></div></div>
+</section>
+<section id="customers" class="page">
+<div class="section-title"><div><h3>مشتریان</h3><span class="subtle" id="customerLimitLabel"></span></div><button onclick="showCustomerForm()">＋ مشتری جدید</button></div>
+<input id="customerSearch" class="search" placeholder="جست‌وجوی نام یا شماره..." oninput="renderCustomers()">
+<div id="customerList"></div>
+<div id="customerForm" class="formbox hidden"><h3 id="customerFormTitle">ثبت مشتری جدید</h3><input type="hidden" id="customerId"><label>نام مشتری *</label><input id="customerName" placeholder="نام و نام خانوادگی"><label>شماره تماس</label><input id="customerPhone" inputmode="tel" placeholder="+93 ..."><label>توضیحات</label><textarea id="customerDesc" placeholder="یادداشت درباره مشتری"></textarea><button class="wide" onclick="saveCustomer()">ذخیره مشتری</button><button class="wide secondary" onclick="hideCustomerForm()">انصراف</button></div>
+</section>
+<section id="txn" class="page">
+<div class="section-title"><h3>ثبت تراکنش</h3><span class="subtle">دریافت یا پرداخت</span></div>
+<div class="formbox">
+<label>نوع تراکنش</label><select id="txnType"><option value="receive">دریافت از مشتری</option><option value="pay">پرداخت به مشتری</option><option value="debt">ثبت طلب از مشتری</option><option value="owed">ثبت بدهی به مشتری</option><option value="income">درآمد متفرقه</option><option value="expense">هزینه متفرقه</option></select>
+<label>مشتری (در صورت نیاز)</label><select id="txnCustomer"><option value="">بدون مشتری / متفرقه</option></select>
+<label>مبلغ *</label><input id="txnAmount" type="number" min="0" step="any" placeholder="مثلاً 1500">
+<label>ارز</label><select id="txnCurrency"><option value="AFN">افغانی (AFN)</option><option value="USD">دلار آمریکا (USD)</option><option value="IRT">تومان ایران (IRT)</option></select>
+<label>تاریخ</label><input id="txnDate" type="date">
+<label>شرح / یادداشت</label><textarea id="txnDesc" placeholder="شرح معامله یا دلیل دریافت و پرداخت"></textarea>
+<button class="wide" onclick="saveTxn()">ثبت تراکنش</button><p class="hint">نکته: دریافت، بدهی مشتری را کم می‌کند؛ پرداخت به مشتری، طلب شما از او را کم می‌کند. ارزها جداگانه محاسبه می‌شوند.</p>
+</div></section>
+<section id="notes" class="page">
+<div class="section-title"><h3>یادداشت‌های روزانه</h3></div>
+<div class="formbox"><label>عنوان</label><input id="noteTitle" placeholder="مثلاً پیگیری حساب مشتری"><label>متن یادداشت *</label><textarea id="noteBody" placeholder="یادداشت امروز..."></textarea><label>تاریخ</label><input id="noteDate" type="date"><button class="wide" onclick="saveNote()">ذخیره یادداشت</button></div>
+<div class="section"><div class="section-title"><h3>یادداشت‌های ثبت‌شده</h3></div><div id="noteList"></div></div>
+</section>
+<section id="history" class="page">
+<div class="section-title"><h3>تاریخچه تراکنش‌ها</h3></div>
+<input id="historySearch" class="search" placeholder="جست‌وجوی مشتری یا شرح..." oninput="renderHistory()">
+<div class="grid2"><div><label>فیلتر ارز</label><select id="historyCurrency" onchange="renderHistory()"><option value="">همه ارزها</option><option value="AFN">افغانی</option><option value="USD">دلار</option><option value="IRT">تومان</option></select></div><div><label>فیلتر نوع</label><select id="historyType" onchange="renderHistory()"><option value="">همه انواع</option><option value="receive">دریافت</option><option value="pay">پرداخت</option><option value="debt">ثبت طلب</option><option value="owed">ثبت بدهی</option><option value="income">درآمد</option><option value="expense">هزینه</option></select></div></div><div id="historyList"></div>
+</section>
+<section id="reports" class="page">
+<div class="section-title"><h3>گزارش مالی</h3></div><p class="subtle">گزارش‌ها برای هر ارز جداگانه هستند؛ نرخ تبدیل ارز اعمال نمی‌شود.</p>
+<div id="reportCards"></div>
+<div class="section"><div class="section-title"><h3>نسخه پریمیوم</h3></div>
+<div class="formbox">
+<div class="itemtop"><b>AlfaPlus حساب‌یار پریمیوم</b><span class="pill">پرداخت یک‌باره</span></div>
+<p>نسخه رایگان امکان ثبت حداکثر ۱۰ مشتری را دارد. نسخه پریمیوم دائمی با قیمت ۵ دلار برای ثبت مشتریان بیشتر در نظر گرفته شده است.</p>
+<p class="hint">برای خرید و هماهنگی فعال‌سازی با پشتیبانی تماس بگیرید. پرداخت آنلاین و تأیید خودکار هنوز به این نسخه متصل نیست.</p>
+<button class="wide" onclick="contactSupport('درخواست خرید پریمیوم AlfaPlus حساب‌یار با قیمت ۵ دلار')">درخواست خرید پریمیوم</button>
+</div></div>
+<div class="section"><div class="section-title"><h3>پشتیبانی</h3></div>
+<div class="formbox"><p>برای خرید پریمیوم، راهنمایی یا گزارش مشکل با ما در تماس باشید.</p>
+<div class="grid2"><button onclick="openTelegramSupport()">تلگرام @SupAlfaself</button><button class="secondary" onclick="openWhatsAppSupport()">واتساپ / تماس</button></div>
+<p class="hint">شماره تماس: 0775234072</p></div></div>
+<div class="section"><div class="section-title"><h3>پشتیبان‌گیری و انتقال</h3></div><div class="formbox"><p class="hint">یک فایل پشتیبان از مشتریان، تراکنش‌ها و یادداشت‌ها بسازید یا فایل قبلی را وارد کنید. فایل را در جای امن نگه دارید.</p><button class="wide" onclick="exportBackup()">⬇ دریافت فایل پشتیبان</button><label class="filebtn">بازیابی از فایل پشتیبان<input type="file" id="importFile" accept="application/json,.json" onchange="importBackup(event)"></label><button class="wide danger" onclick="clearAll()">پاک کردن تمام اطلاعات</button><p class="hint">اطلاعات این نسخه در حافظه مرورگر همین دستگاه ذخیره می‌شود. پاک‌کردن داده‌های مرورگر یا حذف آن ممکن است اطلاعات را از بین ببرد؛ مرتب پشتیبان بگیرید.</p></div></div>
+</section>
+</div>
+<nav class="nav"><div class="navinner">
+<button class="active" data-page="home" onclick="openPage('home')"><span>⌂</span>خانه</button>
+<button data-page="customers" onclick="openPage('customers')"><span>♙</span>مشتریان</button>
+<button data-page="txn" onclick="openPage('txn')"><span>＋</span>تراکنش</button>
+<button data-page="notes" onclick="openPage('notes')"><span>▤</span>یادداشت</button>
+<button data-page="reports" onclick="openPage('reports')"><span>▥</span>گزارش</button>
+</div></nav>
+<script>
+const KEY='alfaplus_hesabyar_v1';
+const currencies={AFN:'افغانی',USD:'دلار آمریکا',IRT:'تومان'};
+const types={receive:'دریافت از مشتری',pay:'پرداخت به مشتری',debt:'ثبت طلب',owed:'ثبت بدهی',income:'درآمد متفرقه',expense:'هزینه متفرقه'};
+let data=loadData();
+function loadData(){try{return JSON.parse(localStorage.getItem(KEY))||{customers:[],txns:[],notes:[]}}catch(e){return{customers:[],txns:[],notes:[]}}}
+function persist(){localStorage.setItem(KEY,JSON.stringify(data));renderAll()}
+function id(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function today(){let d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function fmt(n){return Number(n||0).toLocaleString('en-US',{maximumFractionDigits:2})}
+function money(n,c){return fmt(n)+' '+(c||'')}
+function toast(s){let t=document.getElementById('toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2400)}
+function openPage(p){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===p));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===p));if(p==='txn')fillCustomerSelect();renderAll();window.scrollTo(0,0)}
+function openTxn(){document.getElementById('txnDate').value=today();fillCustomerSelect();openPage('txn')}
+function customerName(cid){return data.customers.find(c=>c.id===cid)?.name||'مشتری حذف‌شده'}
+function signed(t){return ['receive','income'].includes(t.type)?1:['pay','expense'].includes(t.type)?-1:0}
+function balances(){let out={AFN:{debt:0,credit:0,received:0,paid:0},USD:{debt:0,credit:0,received:0,paid:0},IRT:{debt:0,credit:0,received:0,paid:0}};
+data.txns.forEach(t=>{let b=out[t.currency];if(!b)return;let a=+t.amount||0;if(t.type==='debt')b.debt+=a;if(t.type==='owed')b.credit+=a;if(t.type==='receive'){b.received+=a;b.debt=Math.max(0,b.debt-a)}if(t.type==='pay'){b.paid+=a;b.credit=Math.max(0,b.credit-a)}});return out}
+function renderHome(){let b=balances();document.getElementById('currencyCards').innerHTML=Object.keys(currencies).map(c=>`<div class="card"><small>${currencies[c]}</small><strong>${fmt(b[c].debt)} طلب</strong><small style="margin-top:7px">${fmt(b[c].credit)} بدهی</small></div>`).join('');
+let tx=[...data.txns].sort((a,b)=>b.created-a).slice(0,4);document.getElementById('recent').innerHTML=tx.length?tx.map(txnHTML).join(''):'<div class="empty">هنوز تراکنشی ثبت نشده است.</div>'}
+function showCustomerForm(c=null){document.getElementById('customerForm').classList.remove('hidden');document.getElementById('customerFormTitle').textContent=c?'ویرایش مشتری':'ثبت مشتری جدید';document.getElementById('customerId').value=c?.id||'';document.getElementById('customerName').value=c?.name||'';document.getElementById('customerPhone').value=c?.phone||'';document.getElementById('customerDesc').value=c?.desc||'';document.getElementById('customerName').focus()}
+function hideCustomerForm(){document.getElementById('customerForm').classList.add('hidden')}
+function saveCustomer(){let name=document.getElementById('customerName').value.trim();if(!name)return toast('نام مشتری را وارد کنید.');let cid=document.getElementById('customerId').value;if(!cid&&data.customers.length>=10&&!isPremium()){hideCustomerForm();openPage('reports');toast('نسخه رایگان فقط ۱۰ مشتری دارد. برای ادامه، پریمیوم را بررسی کنید.');return}let c={id:cid||id(),name,phone:document.getElementById('customerPhone').value.trim(),desc:document.getElementById('customerDesc').value.trim(),created:Date.now()};if(cid)data.customers=data.customers.map(x=>x.id===cid?{...x,...c}:x);else data.customers.unshift(c);hideCustomerForm();persist();toast('مشتری ذخیره شد.')}
+function customerLedger(cid){let out={};Object.keys(currencies).forEach(c=>out[c]={debt:0,credit:0,turnover:0});data.txns.filter(t=>t.customerId===cid).forEach(t=>{let b=out[t.currency];if(!b)return;let a=Number(t.amount)||0;b.turnover+=a;if(t.type==='debt')b.debt+=a;else if(t.type==='receive')b.debt-=a;else if(t.type==='owed')b.credit+=a;else if(t.type==='pay')b.credit-=a});Object.values(out).forEach(b=>{b.debt=Math.max(0,b.debt);b.credit=Math.max(0,b.credit)});return out}
+function renderCustomers(){let limitLabel=document.getElementById('customerLimitLabel');if(limitLabel)limitLabel.textContent=isPremium()?'پریمیوم دائمی':`${data.customers.length}/10 مشتری رایگان`;let q=(document.getElementById('customerSearch')?.value||'').toLowerCase();let cs=data.customers.filter(c=>(c.name+' '+c.phone+' '+c.desc).toLowerCase().includes(q));document.getElementById('customerList').innerHTML=cs.length?cs.map(c=>{let tx=data.txns.filter(t=>t.customerId===c.id);let ledger=customerLedger(c.id);let rows=Object.keys(currencies).filter(cur=>ledger[cur].turnover>0).map(cur=>`<div class="balance-line"><span>${currencies[cur]} · بدهی باقی‌مانده مشتری</span><b class="${ledger[cur].debt>0?'redbox':'greenbox'}">${fmt(ledger[cur].debt)} ${cur}</b></div><div class="balance-line"><span>${currencies[cur]} · طلب شما از مشتری</span><b class="${ledger[cur].credit>0?'redbox':'greenbox'}">${fmt(ledger[cur].credit)} ${cur}</b></div><div class="balance-line"><span>${currencies[cur]} · گردش کل حساب</span><b class="greenbox">${fmt(ledger[cur].turnover)} ${cur}</b></div>`).join('');return `<div class="item"><div class="itemtop"><b>${esc(c.name)}</b><span class="subtle">${esc(c.phone)}</span></div>${c.desc?`<p>${esc(c.desc)}</p>`:''}<p>${tx.length} تراکنش ثبت‌شده</p>${rows||'<div class="balance-line greenbox">حساب هنوز تراکنشی ندارد</div>'}<div class="rowbtn"><button class="smallbtn" onclick="quickCustomerTxn('${c.id}')">ثبت تراکنش</button><button class="secondary smallbtn" onclick="showCustomerForm(data.customers.find(x=>x.id==='${c.id}'))">ویرایش</button><button class="secondary smallbtn" onclick="customerHistory('${c.id}')">تاریخچه</button><button class="danger smallbtn" onclick="deleteCustomer('${c.id}')">حذف</button></div></div>`}).join(''):'<div class="empty">مشتری پیدا نشد. از «مشتری جدید» شروع کنید.</div>'}
+function deleteCustomer(cid){if(!confirm('مشتری حذف شود؟ تراکنش‌های قبلی حفظ می‌شوند.'))return;data.customers=data.customers.filter(c=>c.id!==cid);persist();toast('مشتری حذف شد.')}
+function quickCustomerTxn(cid){openTxn();document.getElementById('txnCustomer').value=cid}
+function customerHistory(cid){openPage('history');document.getElementById('historySearch').value=customerName(cid);renderHistory()}
+function fillCustomerSelect(){let s=document.getElementById('txnCustomer'),old=s.value;s.innerHTML='<option value="">بدون مشتری / متفرقه</option>'+data.customers.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('');if(data.customers.some(c=>c.id===old))s.value=old}
+function saveTxn(){let amount=Number(document.getElementById('txnAmount').value);if(!(amount>0))return toast('مبلغ باید بیشتر از صفر باشد.');let t={id:id(),type:document.getElementById('txnType').value,customerId:document.getElementById('txnCustomer').value,currency:document.getElementById('txnCurrency').value,amount,date:document.getElementById('txnDate').value||today(),desc:document.getElementById('txnDesc').value.trim(),created:Date.now()};data.txns.unshift(t);document.getElementById('txnAmount').value='';document.getElementById('txnDesc').value='';persist();toast('تراکنش ثبت شد.');openPage('history')}
+function txnHTML(t){let positive=['receive','income','debt'].includes(t.type),prefix=positive?'+':'−';let dt=new Date(t.created||Date.now());let time=dt.toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'});return `<div class="item"><div class="itemtop"><b>${esc(types[t.type]||t.type)}${t.customerId?' · '+esc(customerName(t.customerId)):''}</b><span class="amount ${positive?'positive':'negative'}">${prefix}${money(t.amount,t.currency)}</span></div><p>${esc(t.date)} · ساعت ${esc(time)}${t.desc?' · '+esc(t.desc):''}</p><div class="rowbtn"><button class="danger smallbtn" onclick="deleteTxn('${t.id}')">حذف تراکنش</button></div></div>`}
+function deleteTxn(tid){if(!confirm('این تراکنش حذف شود؟'))return;data.txns=data.txns.filter(t=>t.id!==tid);persist();toast('تراکنش حذف شد.')}
+function renderHistory(){let q=(document.getElementById('historySearch')?.value||'').toLowerCase(),c=document.getElementById('historyCurrency')?.value||'',ty=document.getElementById('historyType')?.value||'';let arr=data.txns.filter(t=>(!c||t.currency===c)&&(!ty||t.type===ty)&&(`${customerName(t.customerId)} ${t.desc} ${types[t.type]} ${t.date}`).toLowerCase().includes(q)).sort((a,b)=>b.created-a.created);document.getElementById('historyList').innerHTML=arr.length?arr.map(txnHTML).join(''):'<div class="empty">تراکنشی مطابق جست‌وجو پیدا نشد.</div>'}
+function saveNote(){let body=document.getElementById('noteBody').value.trim();if(!body)return toast('متن یادداشت را بنویسید.');data.notes.unshift({id:id(),title:document.getElementById('noteTitle').value.trim(),body,date:document.getElementById('noteDate').value||today(),created:Date.now()});document.getElementById('noteTitle').value='';document.getElementById('noteBody').value='';persist();toast('یادداشت ذخیره شد.')}
+function renderNotes(){document.getElementById('noteList').innerHTML=data.notes.length?data.notes.slice().sort((a,b)=>b.created-a.created).map(n=>`<div class="item"><div class="itemtop"><b>${esc(n.title||'یادداشت روزانه')}</b><span class="subtle">${esc(n.date)}</span></div><p class="note">${esc(n.body)}</p><div class="rowbtn"><button class="danger smallbtn" onclick="deleteNote('${n.id}')">حذف یادداشت</button></div></div>`).join(''):'<div class="empty">هنوز یادداشتی ثبت نشده است.</div>'}
+function deleteNote(nid){if(!confirm('یادداشت حذف شود؟'))return;data.notes=data.notes.filter(n=>n.id!==nid);persist()}
+function renderReports(){let b=balances();document.getElementById('reportCards').innerHTML=Object.keys(currencies).map(c=>{let all=data.txns.filter(t=>t.currency===c);let received=all.filter(t=>['receive','income'].includes(t.type)).reduce((s,t)=>s+t.amount,0),paid=all.filter(t=>['pay','expense'].includes(t.type)).reduce((s,t)=>s+t.amount,0);return `<div class="item"><div class="itemtop"><b>${currencies[c]} (${c})</b><span class="pill">${all.length} تراکنش</span></div><div class="cards"><div class="card"><small>طلب ثبت‌شده</small><strong>${fmt(b[c].debt)}</strong></div><div class="card"><small>بدهی ثبت‌شده</small><strong>${fmt(b[c].credit)}</strong></div><div class="card"><small>خالص دریافت‌ها</small><strong>${fmt(received-paid)}</strong></div></div><p>کل دریافت و درآمد: ${fmt(received)} · کل پرداخت و هزینه: ${fmt(paid)}</p></div>`}).join('')}
+function exportBackup(){let blob=new Blob([JSON.stringify({app:'AlfaPlus Hesabyar',version:1,exportedAt:new Date().toISOString(),data},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='AlfaPlus-Hesabyar-backup-'+today()+'.json';a.click();URL.revokeObjectURL(a.href);toast('فایل پشتیبان آماده شد.')}
+function importBackup(ev){let file=ev.target.files[0];if(!file)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result),d=x.data||x;if(!Array.isArray(d.customers)||!Array.isArray(d.txns)||!Array.isArray(d.notes))throw Error('bad');if(!confirm('اطلاعات فعلی با اطلاعات فایل جایگزین شود؟'))return;data=d;persist();toast('پشتیبان بازیابی شد.')}catch(e){toast('فایل پشتیبان معتبر نیست.')}ev.target.value=''};r.readAsText(file)}
+function clearAll(){if(!confirm('تمام مشتریان، تراکنش‌ها و یادداشت‌ها برای همیشه از این دستگاه پاک شوند؟ ابتدا پشتیبان بگیرید.'))return;data={customers:[],txns:[],notes:[]};persist();toast('اطلاعات پاک شد.')}
+function isPremium(){return !!data.premium}
+function contactSupport(message='سلام، برای پشتیبانی AlfaPlus حساب‌یار پیام می‌دهم.'){window.open('https://wa.me/93775234072?text='+encodeURIComponent(message),'_blank')}
+function openWhatsAppSupport(){contactSupport()}
+function openTelegramSupport(){window.open('https://t.me/SupAlfaself','_blank')}
+function renderAll(){renderHome();renderCustomers();renderHistory();renderNotes();renderReports();fillCustomerSelect()}
+document.getElementById('txnDate').value=today();document.getElementById('noteDate').value=today();renderAll();
+</script>
+</body></html>
